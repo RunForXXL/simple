@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f5dcdb6-ab79-44f5-aa98-ceb5833d839a" name="Default Changelist" comment="" />
+    <list default="true" id="4f5dcdb6-ab79-44f5-aa98-ceb5833d839a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/temp/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/temp/dao/GoodsDao.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../git-workspce/shopping-management-system/0#Java基础项目" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java_github_project/shopping-management-system/0#Java基础项目" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -73,6 +75,7 @@
       <workItem from="1577416377621" duration="657000" />
       <workItem from="1577500874953" duration="6173000" />
       <workItem from="1577532539669" duration="680000" />
+      <workItem from="1577539907372" duration="3077000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1577507890002</created>

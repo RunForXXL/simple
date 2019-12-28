@@ -49,10 +49,10 @@ public class GoodsDao {
 
         switch (key){
             case 1: //更改商品名称
-                    String sql = "update goods set gname=? where gid=?";
+                    String sqlName = "update goods set gname=? where gid=?";
 
                     try {
-                        pstmt = conn.prepareStatement(sql);
+                        pstmt = conn.prepareStatement(sqlName);
                         pstmt.setInt(2, goods.getGid());
                         pstmt.setString(1, goods.getGname());
 
@@ -68,12 +68,46 @@ public class GoodsDao {
                     }
 
                     break;
-            case 2:
-                    String sql = "";
-                    pstmt = conn.prepareStatement(sql);
+            case 2: //更改商品价格
+                    String sqlPrice = "update goods set gprice=? where gid = ?";
+                    try {
+                        pstmt = conn.prepareStatement(sqlPrice);
+                        pstmt.setDouble(1, goods.getGprice());
+                        pstmt.setInt(2, goods.getGid());
+
+                        int rs = pstmt.executeUpdate();
+                        if(rs > 0){
+                            flag = true;
+                        }
+
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    } finally {
+                        DbClose.addClose(pstmt, conn);
+                    }
 
                 break;
-            case 3:
+            case 3://	key=3,更改商品数量
+                    String sqlNum = "UPDATE GOODS SET GNUM=? WHERE GID=?";
+
+                    try
+                    {
+                        pstmt = conn.prepareStatement(sqlNum);
+                        pstmt.setInt(1, goods.getGnum());
+                        pstmt.setInt(2,goods.getGid());
+
+                        int rs = pstmt.executeUpdate();
+                        if (rs > 0)
+                        {
+                            flag = true;
+                        }
+                    } catch (SQLException e)
+                    {
+                        e.printStackTrace();
+                    }finally{
+                        DbClose.addClose(pstmt,conn);
+                    }
+
                 break;
             default:
                 break;
